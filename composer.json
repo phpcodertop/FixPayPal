@@ -1,0 +1,31 @@
+{
+    "name": "phpcodertop/FixPayPal",
+    "description": "If you have tried to import PayPal transaction history into traditional accounting platforms such as Mint or QuickBooks you probably discovered it didn't work. This is because PayPal does a lot of unusual things that make their exports incompatible. This application was built specifically to solve that problem. Just upload your script and click download, in seconds you'll have a properly formatted CSV or Excel file ready to be imported into any traditional accounting software.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ahmed Maher Halima",
+            "email": "phpcodertop@gmail.com"
+        }
+    ],
+    "require": {},
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "phpcodertop\\FixPayPal\\FixPayPalServiceProvider"
+            ],
+            "aliases": {
+                "FixPayPal": "phpcodertop\\FixPayPal\\Facades\\FixPayPal"
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "phpcodertop\\FixPayPal\\": "src/"
+        },
+        "files": [
+            "src/functions.php"
+        ]
+    }
+}
