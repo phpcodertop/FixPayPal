@@ -23,7 +23,7 @@ For spencer hill Principal
 
 # Installation
 <code>
-composer require phpcodertop/FixPayPal
+composer require phpcodertop/fixpaypal
 </code>
 
 # Usage 
